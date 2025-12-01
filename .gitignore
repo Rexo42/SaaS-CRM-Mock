@@ -1,0 +1,12 @@
+#environment variables
+.env
+.env* 
+
+
+#node packages
+node_modules/
+
+
+#build outputs
+dist/
+build/
