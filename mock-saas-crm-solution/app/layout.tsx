@@ -7,6 +7,7 @@ import {
   SignedIn,
   SignedOut,
   UserButton,
+  SignOutButton
 } from '@clerk/nextjs'
 import "./globals.css";
 
@@ -41,10 +42,17 @@ export default function RootLayout({
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
           <Navbar/>
+          {/* AUTH LOGIC DEMO */}
           <SignedOut>
-            <SignInButton></SignInButton>
+            <SignInButton/>
           </SignedOut>
-          {/* throw navbar here */}
+          <SignedIn>
+            <UserButton/>
+            <br/>
+            <SignOutButton/>
+          </SignedIn>
+          {/* END AUTH LOGIC DEMO */}
+    
           {children}
         </body>
       </html>
