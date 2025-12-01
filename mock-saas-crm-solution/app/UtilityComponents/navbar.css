@@ -1,0 +1,39 @@
+.navbarContainer
+{
+    display: flex;
+    margin: auto;
+    height: 5vh;
+    border: 1px solid white;
+    overflow: hidden;
+    backdrop-filter: (5px);
+}
+.navbarLeft
+{
+    border: 2px solid red;
+    width: 30%;
+    height: auto;
+
+    padding-left: 10px;
+    text-align: left;
+    margin: auto;
+    
+}
+.navbarRight
+{
+    height: auto;
+    display: flex;
+    gap: 2.5%;
+    border: 2px solid blue;
+    width: 70%;
+    margin: auto;
+    padding-left: 5%;
+}
+.homeButton
+{
+    
+    border: 2px solid red;
+}
+.loginButton
+{
+    border: 2px solid purple;
+}
