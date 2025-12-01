@@ -1,5 +1,13 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import {
+  ClerkProvider,
+  SignInButton,
+  SignUpButton,
+  SignedIn,
+  SignedOut,
+  UserButton,
+} from '@clerk/nextjs'
 import "./globals.css";
 
 // component import
@@ -26,14 +34,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {/* throw navbar here */}
-        <Navbar/>
-        {children}
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        >
+          <Navbar/>
+          <SignedOut>
+            <SignInButton></SignInButton>
+          </SignedOut>
+          {/* throw navbar here */}
+          {children}
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }

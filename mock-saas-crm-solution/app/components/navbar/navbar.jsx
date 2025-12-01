@@ -9,8 +9,8 @@ export default function Navbar()
                 </div>
 
                 <div className='navbarRight'>
-                    <a className='homeButton' href='/home'>Home</a>
-                    <a className='loginButton' href='/login'>Login</a>
+                    <li><a className='homeButton' href='/home'>Home</a></li>
+                    <li><a className='loginButton' href='/login'>Login</a></li>
                 </div>
         </nav>
     );

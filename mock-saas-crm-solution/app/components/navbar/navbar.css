@@ -1,15 +1,20 @@
 .navbarContainer
 {
+    /* position: fixed; */
+    position: sticky;
+    top: 0;
+    background-color: rgba(27, 28, 29, 0.75);
     display: flex;
     margin: auto;
     height: 5vh;
-    border: 1px solid white;
+    min-height: 30px;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     overflow: hidden;
     backdrop-filter: (5px);
 }
 .navbarLeft
 {
-    border: 2px solid red;
     width: 30%;
     height: auto;
 
@@ -22,8 +27,7 @@
 {
     height: auto;
     display: flex;
-    gap: 2.5%;
-    border: 2px solid blue;
+    gap: 10%;
     width: 70%;
     margin: auto;
     padding-left: 5%;
@@ -31,9 +35,7 @@
 .homeButton
 {
     
-    border: 2px solid red;
 }
 .loginButton
 {
-    border: 2px solid purple;
 }
