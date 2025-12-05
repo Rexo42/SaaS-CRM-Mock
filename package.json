@@ -1,5 +1,9 @@
 {
+  "type": "module",
   "dependencies": {
-    "@clerk/nextjs": "^6.35.5"
+    "@clerk/nextjs": "^6.35.5",
+    "cors": "^2.8.5",
+    "express": "^5.2.1",
+    "mongodb": "^7.0.0"
   }
 }

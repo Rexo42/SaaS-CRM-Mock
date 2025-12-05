@@ -4,7 +4,7 @@ import type { userData } from "@/app/interfaces/userData";
 
 import { clerkClient } from "@clerk/nextjs/server";
 
-export async function getUser(): Promise<userData | null>
+export async function getUser()
 {
     const user = await currentUser();
     if (!user)
